@@ -83,22 +83,25 @@ Contains unit and integration tests.
 
 To get started with the project, follow these steps:
 
-1. **Clone the Repository**  
-   Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/ramanachari/cqrs-mediator-school-app.git
-2. **Navigate to the Project Directory**  
-   ```bash
-   cd cqrs-mediator-school-app
-3. **Build the Project**  
-   Build the project using the following command:
-   ```bash
-   dotnet build
-4. **Run the Application**  
-   ```bash
-   dotnet run
-5. **Run the Tests**  
-   Run the unit and integration tests:
-   ```bash
-   dotnet test
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/ramanachari/cqrs-mediator-school-app.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd cqrs-mediator-school-app
+    ```
+3. Build the project:
+    ```bash
+    dotnet build
+    ```
+4. Run the application:
+    ```bash
+    dotnet run
+    ```
+5. Run the tests:
+    ```bash
+    dotnet test
+    ```
+    
 
