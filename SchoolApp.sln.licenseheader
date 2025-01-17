@@ -1,0 +1,16 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// <copyright file="$FileNameWithExtension$" company="Venkata, RALLABANDI">
+// Copyright (c) Venkata, RALLABANDI. All rights reserved.
+// </copyright>
+
+extensions: .aspx .ascx
+<%-- 
+Copyright (c) 2011 rubicon IT GmbH
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Sample license text.
+-->
