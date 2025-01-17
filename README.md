@@ -22,27 +22,22 @@ Contains the core business logic of the application.
   - `ClassRoom`
   - `Teacher`
   - `Student`
-  - `School`
 - **Queries**: Handles read operations.
   - `ClassRoom`
   - `Teacher`
   - `Student`
-  - `School`
 - **Handlers**: Implements the logic for commands and queries.
   - `ClassRoom`
   - `Teacher`
   - `Student`
-  - `School`
 - **Services**: Contains service classes for business operations.
   - `ClassRoomService`
   - `TeacherService`
   - `StudentService`
-  - `SchoolService`
 - **DTOs**: Data Transfer Objects for transferring data between layers.
   - `ClassRoomDTO`
   - `TeacherDTO`
   - `StudentDTO`
-  - `SchoolDTO`
 
 ### Data
 
@@ -52,12 +47,10 @@ Contains data access logic and models.
   - `ClassRoom`
   - `Teacher`
   - `Student`
-  - `School`
 - **Repositories**: Repository classes for data access.
   - `ClassRoomRepository`
   - `TeacherRepository`
   - `StudentRepository`
-  - `SchoolRepository`
 - **Dapper**: Dapper context for database connections.
   - `DapperContext`
   - `IDapperContext`
@@ -70,12 +63,8 @@ Contains the main application logic and configuration.
 - **Configuration**: Application settings.
   - `AppSettings`
 - **DependencyInjection**: Dependency injection setup.
-  - `Startup`
-- **Views**: Presentation layer classes.
-  - `SchoolView`
-  - `ClassRoomView`
-  - `TeacherView`
-  - `StudentView`
+  - `Program`
+- **(No Views)**: As this is a console-based application, we do not have a separate presentation layer with views. All interactions are handled through the console.
 
 ### Tests
 
@@ -94,8 +83,22 @@ Contains unit and integration tests.
 
 To get started with the project, follow these steps:
 
-1. Clone the repository:
-2. Navigate to the project directory:
-3. Build the project:
-4. Run the application:
-5. Run the tests:
+1. **Clone the Repository**  
+   Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/ramanachari/cqrs-mediator-school-app.git
+2. **Navigate to the Project Directory**  
+   ```bash
+   cd cqrs-mediator-school-app
+3. **Build the Project**  
+   Build the project using the following command:
+   ```bash
+   dotnet build
+4. **Run the Application**  
+   ```bash
+   dotnet run
+5. **Run the Tests**  
+   Run the unit and integration tests:
+   ```bash
+   dotnet test
+
