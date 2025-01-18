@@ -6,16 +6,16 @@ SchoolApp is a .NET 8 application designed to manage various aspects of a school
 
 - **CQRS** for a clear separation of read and write operations.  
 - **Mediator** to handle request/response interactions and maintain clean, decoupled code.  
-- **Dapper.Contrib** for efficient Create, Update, and Delete operations.  
-- **Dapper** for optimized query performance in read operations.  
+- **Dapper.Contrib** for efficient Create, Update, and Delete operations (commands).  
+- **Dapper** for optimized query performance in read operations (queries).  
 - Delivered **unit-testable** and **integration-testable** code to ensure high reliability and maintainability.
 
 ## Technologies Used
 
 - **.NET 8**  
 - **C# 12.0**  
-- **Dapper** for data access  
-- **Dapper.Contrib** for commands (CRUD operations)  
+- **Dapper** for read operations (queries) 
+- **Dapper.Contrib** for data update operations (commands)
 - **CQRS and Mediator Patterns**  
 - **Unit Testing** with xUnit  
 - **Integration Testing** with xUnit 
