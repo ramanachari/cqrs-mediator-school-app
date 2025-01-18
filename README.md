@@ -2,13 +2,23 @@
 
 SchoolApp is a .NET 8 application designed to manage various aspects of a school system, including classrooms, teachers, students. The application is structured using a clean architecture approach, separating concerns into different layers such as Business, Data, and Presentation.
 
+## Key Features
+
+- **CQRS** for a clear separation of read and write operations.  
+- **Mediator** to handle request/response interactions and maintain clean, decoupled code.  
+- **Dapper.Contrib** for efficient Create, Update, and Delete operations.  
+- **Dapper** for optimized query performance in read operations.  
+- Delivered **unit-testable** and **integration-testable** code to ensure high reliability and maintainability.
+
 ## Technologies Used
 
-- **.NET 8**
-- **C# 12.0**
-- **Dapper** for data access
-- **Unit Testing** with xUnit
-- **Integration Testing** with xUnit
+- **.NET 8**  
+- **C# 12.0**  
+- **Dapper** for data access  
+- **Dapper.Contrib** for commands (CRUD operations)  
+- **CQRS and Mediator Patterns**  
+- **Unit Testing** with xUnit  
+- **Integration Testing** with xUnit 
 
 ## Project Structure
 
