@@ -13,6 +13,7 @@ namespace SchoolApp.Tests.Unit.Student
     /// <summary>
     /// The get student by id handler tests.
     /// </summary>
+    [Trait("Category", "Unit")]
     public class GetStudentByIdHandlerTests
     {
         /// <summary>

@@ -12,6 +12,7 @@ namespace SchoolApp.Tests.Unit.Student
     /// <summary>
     /// The delete student handler tests.
     /// </summary>
+    [Trait("Category", "Unit")]
     public class DeleteStudentHandlerTests
     {
         /// <summary>

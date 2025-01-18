@@ -14,6 +14,7 @@ namespace SchoolApp.Tests.Unit.Student
     /// <summary>
     /// The update student handler tests.
     /// </summary>
+    [Trait("Category", "Unit")]
     public class UpdateStudentHandlerTests
     {
         /// <summary>

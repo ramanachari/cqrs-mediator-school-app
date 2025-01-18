@@ -17,6 +17,7 @@ namespace SchoolApp.Tests.Integration.Student
     /// <summary>
     /// The student repository integration tests.
     /// </summary>
+    [Trait("Category", "Integration")]
     public class StudentRepositoryIntegrationTests
     {
         /// <summary>
@@ -123,6 +124,3 @@ namespace SchoolApp.Tests.Integration.Student
         }
     }
 }
-
-
-
