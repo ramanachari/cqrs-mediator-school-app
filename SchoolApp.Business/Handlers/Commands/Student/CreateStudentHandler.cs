@@ -7,6 +7,7 @@ namespace SchoolApp.Business.Handlers.Commands.Student
     using MediatR;
     using SchoolApp.Business.Commands.Student;
     using SchoolApp.Business.Services.Interfaces;
+    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// The create student handler.
@@ -35,6 +36,11 @@ namespace SchoolApp.Business.Handlers.Commands.Student
         /// <returns><![CDATA[Task<int>]]></returns>
         public async Task<int> Handle(CreateStudentCommand request, CancellationToken cancellationToken)
         {
+            if (string.IsNullOrEmpty(request.StudentDto.Name))
+            {
+                throw new ValidationException();
+            }
+
             return await _studentService.AddStudentAsync(request.StudentDto, request.User);
         }
     }

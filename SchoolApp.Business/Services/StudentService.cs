@@ -104,28 +104,5 @@ namespace SchoolApp.Business.Services
                 ClassRoomId = student.ClassRoomId,
             };
         }
-
-        /// <summary>
-        /// Gets all students asynchronously.
-        /// </summary>
-        /// <returns>A collection of student data transfer objects.</returns>
-        public async Task<IEnumerable<StudentDto>> GetAllStudentsAsync()
-        {
-            var students = await this._studentRepository.GetAllStudentsAsync();
-            var studentDtos = new List<StudentDto>();
-
-            foreach (var student in students)
-            {
-                studentDtos.Add(new StudentDto
-                {
-                    Id = student.Id,
-                    Name = student.Name,
-                    DateOfBirth = student.DateOfBirth,
-                    ClassRoomId = student.ClassRoomId,
-                });
-            }
-
-            return studentDtos;
-        }
     }
 }

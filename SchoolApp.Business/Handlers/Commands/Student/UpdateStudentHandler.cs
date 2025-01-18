@@ -1,5 +1,5 @@
-﻿// <copyright file="UpdateStudentHandler.cs" company="Venkata RALLABANDI">
-// Copyright (c) Venkata RALLABANDI. All rights reserved.
+﻿// <copyright file="UpdateStudentHandler.cs" company="Venkata, RALLABANDI">
+// Copyright (c) Venkata, RALLABANDI. All rights reserved.
 // </copyright>
 
 namespace SchoolApp.Business.Handlers.Commands.Student
@@ -7,6 +7,7 @@ namespace SchoolApp.Business.Handlers.Commands.Student
     using MediatR;
     using SchoolApp.Business.Commands.Student;
     using SchoolApp.Business.Services.Interfaces;
+    using System.ComponentModel.DataAnnotations;
 
     /// <summary>
     /// The update student handler.
@@ -35,6 +36,11 @@ namespace SchoolApp.Business.Handlers.Commands.Student
         /// <returns><![CDATA[Task<bool>]]></returns>
         public async Task<bool> Handle(UpdateStudentCommand request, CancellationToken cancellationToken)
         {
+            if (string.IsNullOrEmpty(request.StudentDto.Name))
+            {
+                throw new ValidationException();
+            }
+
             return await _studentService.UpdateStudentAsync(request.StudentDto, request.User);
         }
     }

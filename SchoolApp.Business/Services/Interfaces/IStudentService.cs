@@ -40,11 +40,5 @@ namespace SchoolApp.Business.Services.Interfaces
         /// <param name="studentId">The ID of the student to retrieve.</param>
         /// <returns>The student DTO containing the student's details.</returns>
         Task<StudentDto> GetStudentByIdAsync(int studentId);
-
-        /// <summary>
-        /// Retrieves all students.
-        /// </summary>
-        /// <returns>A list of student DTOs.</returns>
-        Task<IEnumerable<StudentDto>> GetAllStudentsAsync();
     }
 }
