@@ -103,7 +103,7 @@ To get started with the project, follow these steps:
     ```
 4. Run the application:
     ```bash
-    dotnet run
+    dotnet run --project SchoolApp.Client/SchoolApp.Client.csproj
     ```
 5. Run the tests:
     - To run **All tests**:
