@@ -106,8 +106,17 @@ To get started with the project, follow these steps:
     dotnet run
     ```
 5. Run the tests:
-    ```bash
-    dotnet test
-    ```
+    - To run **All tests**:
+        ```bash
+        dotnet test
+        ```
+    - To run **unit tests**:
+        ```bash
+        dotnet test --filter "Category=Unit"
+        ```
+    - To run **integration tests**:
+        ```bash
+        dotnet test --filter "Category=Integration"
+        ```
     
 
